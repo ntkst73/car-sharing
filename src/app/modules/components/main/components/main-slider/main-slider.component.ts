@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-slider.component.scss']
 })
 export class MainSliderComponent {
-  title = 'simbirsoft';
+  text: string = 'Подробнее';
+  mod: string = 'primary';
 }

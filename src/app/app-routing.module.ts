@@ -1,6 +1,6 @@
 // import { NgModule } from '@angular/core';
 // import { RouterModule, Routes } from '@angular/router';
-// import { MainComponent } from './shared/components/main/containers/main-container.component';
+// import { MainComponent } from './modules/components/main/containers/main-container.component';
 
 // const routes: Routes = [
 //     {

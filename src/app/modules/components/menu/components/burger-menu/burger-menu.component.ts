@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./burger-menu.component.scss']
 })
 export class BurgerMenuComponent {
-  title = 'simbirsoft';
   stateBurger = false;
 }

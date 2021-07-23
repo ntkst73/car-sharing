@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-left-block.component.scss']
 })
 export class MainLeftComponent {
-  title = 'simbirsoft';
   stateBurger = false;
+  text = "Забронировать";
 }

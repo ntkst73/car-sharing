@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-container.component.scss']
 })
 export class MenuContainerComponent {
-  title = 'simbirsoft';
+ 
 }
