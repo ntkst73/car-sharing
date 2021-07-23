@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row-reverse;
+
+  &-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .app-main {
+    width: 100%;
+  }
+}
+

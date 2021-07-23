@@ -1,0 +1,16 @@
+.order {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  &-order {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .app-order {
+    width: 100%;
+  }
+}
+
