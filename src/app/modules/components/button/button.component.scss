@@ -1,0 +1,42 @@
+.button {
+  background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
+  background-blend-mode: darken;
+  border-radius: 8px;
+  width: 250px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-white);
+  border: none;
+  cursor: url('../../../../assets/cursor-pointer.svg'), pointer;
+
+  &--primary {
+    background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    width: 164px;
+  }
+
+  &--disable {
+    background: var(--color-light-grey);
+    pointer-events: none;
+  }
+
+  &:hover
+  {
+    background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, #076432 2.61%, #013c27 112.6%);
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    border-radius: 0;
+  }
+}

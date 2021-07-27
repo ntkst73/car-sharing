@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/css/style.scss';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-light";
+  cursor: url('./assets/cursor.svg'), default;
+}
+
+@font-face {
+  font-family: "Roboto-light";
+  src: url("./assets/fonts/roboto/Roboto-Light.eot");
+  src: url("./assets/fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/roboto/Roboto-Light.woff") format("woff"), url("./assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-medium";
+  src: url("./assets/fonts/roboto/Roboto-Medium.eot");
+  src: url("./assets/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/roboto/Roboto-Medium.woff") format("woff"), url("./assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,131 @@
+.main-slider {
+  height: 100%;
+  position: relative;
+
+  &__item {
+    height: 100%;
+    background-size: cover;
+  }
+
+  &__item {
+    background: url('../../../../../../assets/slide.jpg');
+    padding: 237px 96px;
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    mix-blend-mode: normal;
+    height: 100%;
+    width: 100%;
+  }
+
+  &_arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    color: white;
+  }
+
+  &_arrows div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 28px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  &_arrows div::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+  }
+
+  &_arrows div:hover:after {
+    background: var(--color-green);
+    opacity: 0.2;
+    cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    display: flex;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__dot {
+    font-size: 23px;
+    margin-right: 24px;
+    color: white;
+  }
+
+  &__dot.active {
+    color: var(--color-green);
+  }
+
+  & {
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--color-white);
+    margin-bottom: 8px;
+    position: relative;
+    font-family: "Roboto-medium";
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 22px;
+    color: var(--color-light-grey);
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    &__title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px;
+    }
+
+    &__description {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 100%;
+    }
+
+    &_arrows div {
+      padding: 12px;
+    }
+
+    &__item {
+      padding: 237px 64px;
+    }
+  }
+}
