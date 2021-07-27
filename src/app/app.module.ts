@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from './modules/components/button/button.module';
 import { HeaderModule } from './modules/components/header/header.module';
+import { InputModule } from './modules/components/input/input.module';
 
 import { MainModule } from './modules/components/main/main.module';
 import { MenuModule } from './modules/components/menu/menu.module';
@@ -28,7 +29,8 @@ import { OrderlocationComponent } from './modules/pages/order/components/order-l
     OrderModule,
     CommonModule,
     ButtonModule,
-    HeaderModule
+    HeaderModule,
+    InputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

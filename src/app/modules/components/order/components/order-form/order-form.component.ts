@@ -15,6 +15,6 @@ export class OrderFormComponent {
   };
 
   deleteValue(event) {
-    
+
   }
 }

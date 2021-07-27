@@ -8,7 +8,7 @@
   }
 
   &__bg {
-    background-color: #151b1f;
+    background-color: var(--color-black-star);
     height: 100%;
   }
 
@@ -161,7 +161,7 @@
     }
 
     &__bg {
-      background-color: #151b1f;
+      background-color: var(--color-black-star);
       height: 100%;
     }
 
@@ -267,7 +267,7 @@
     }
 
     &__bg {
-      background-color: white;
+      background-color: var(--color-white);
       height: auto;
       position: absolute;
     }
