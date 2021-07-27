@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-order-containers',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./order-containers.component.scss']
 })
 export class OrderContainersComponent {
+  constructor(private router: Router) {}
 
+  routeIsActive(routePath: string) {
+    return this.router.url == routePath;
+  }
 }
