@@ -13,6 +13,8 @@ import { MenuModule } from './modules/components/menu/menu.module';
 import { OrderModule } from './modules/components/order/order.module';
 import { MainPageComponent } from './modules/pages/main/main.component';
 import { OrderlocationComponent } from './modules/pages/order/components/order-location/order-location.component';
+import { OrderModelComponent } from './modules/pages/order/components/order-model/order-model.component';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { OrderlocationComponent } from './modules/pages/order/components/order-l
     AppComponent,
     MainPageComponent,
     OrderlocationComponent,
+    OrderModelComponent
   ],
   imports: [
     BrowserModule,

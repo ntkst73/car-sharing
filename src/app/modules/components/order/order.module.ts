@@ -5,6 +5,7 @@ import { HeaderModule } from '../header/header.module';
 import { InputModule } from '../input/input.module';
 import { TabsComponent } from '../tabs/tabs.component';
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
+import { OrderFilterComponent } from './components/order-filter/order-filter.component';
 import { OrderFormComponent } from './components/order-form/order-form.component';
 import { OrderContainersComponent } from './containers/order-containers.component';
 
@@ -13,12 +14,13 @@ import { OrderContainersComponent } from './containers/order-containers.componen
 
 
 @NgModule({
-  exports: [OrderContainersComponent, TabsComponent, OrderFormComponent, OrderConfirmationComponent],
+  exports: [OrderContainersComponent, TabsComponent, OrderFormComponent, OrderConfirmationComponent, OrderFilterComponent],
   declarations: [
     OrderContainersComponent,
     TabsComponent,
     OrderFormComponent,
-    OrderConfirmationComponent
+    OrderConfirmationComponent,
+    OrderFilterComponent
   ],
   imports: [
     BrowserModule,
