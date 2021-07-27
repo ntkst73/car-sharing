@@ -1,37 +1,42 @@
-.button {
-  background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
-  background-blend-mode: darken;
-  border-radius: 8px;
-  width: 250px;
-  height: 48px;
+.order-right-block {
+  border-left: 1px solid #eeeeee;
+  padding-left: 32px;
+  padding-top: 40px;
+  height: calc(100vh - 200px);
+}
+
+.order-containers__left-block {
+  padding-top: 40px;
+}
+
+form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
+  justify-content: space-between;
+  padding: 0 64px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
-  &--primary {
-    background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
-    border-radius: 4px;
-    position: relative;
-    z-index: 2;
-    width: 164px;
+@media (max-width: 1023px) {
+  form {
+    padding: 0 24px;
   }
 
-  &:hover
-  {
-    background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
+  .order-right-block {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    flex-direction: column;
+    padding: 0 10px;
   }
 
-  &:active {
-    background: linear-gradient(90deg, #076432 2.61%, #013c27 112.6%);
-  }
-
-  @media (max-width: 767px) {
+  .order-right-block {
+    border: none;
     width: 100%;
-    border-radius: 0;
+    height: auto;
+    padding-left: 0;
   }
 }

@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./order-form.component.scss']
 })
 export class OrderFormComponent {
+  icon = false;
 
+  getValue(event) {
+    let target = event.target.value;
+
+    target != 0 ? this.icon = true : this.icon = false;
+  };
+
+  deleteValue(event) {
+    
+  }
 }
