@@ -11,7 +11,7 @@
   line-height: 21px;
   color: var(--color-white);
   border: none;
-  cursor: url('./assets/cursor-pointer.svg'), pointer;
+  cursor: url('../../../../assets/cursor-pointer.svg'), pointer;
 
   &--primary {
     background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
