@@ -61,7 +61,7 @@
   &_arrows div:hover:after {
     background: var(--color-green);
     opacity: 0.2;
-    cursor: url('./assets/cursor-pointer.svg'), pointer;
+    cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
   }
 
   &__dots {
@@ -121,7 +121,7 @@
     color: var(--color-light-grey);
     position: relative;
     z-index: 2;
-    cursor: url('./assets/cursor-pointer.svg'), pointer;
+    cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
 
     &:hover, &:active {
       background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
