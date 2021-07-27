@@ -2,12 +2,12 @@
   &__header-text {
     font-size: 30px;
     line-height: 35px;
-    color: #0ec261;
+    color: var(--color-green);
     font-family: "Roboto-medium";
   }
 
   &__header-city {
-    color: #999999;
+    color: var(--light-grey);
     font-size: 14px;
     line-height: 16px;
     display: flex;
@@ -23,7 +23,7 @@
   &__black-title {
     font-size: 70px;
     line-height: 66px;
-    color: #121212;
+    color: var(--color-black);
     margin-bottom: 4px;
     font-family: "Roboto-medium";
   }
@@ -32,7 +32,7 @@
     font-size: 70px;
     line-height: 66px;
     margin-bottom: 34px;
-    color: #0ec261;
+    color: var(--color-green);
     font-family: "Roboto-medium";
   }
 
@@ -41,36 +41,11 @@
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 60px;
-    color: #999999;
-  }
-
-  &_button {
-    background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
-    background-blend-mode: darken;
-    border-radius: 8px;
-    width: 250px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 21px;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-
-    &:hover,
-    &:active {
-      background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
-    }
-
-    &:focus {
-      background: linear-gradient(90deg, #076432 2.61%, #013c27 112.6%);
-    }
+    color: var(--color-grey);
   }
 
   &__footer-coopirate {
-    color: #999999;
+    color: var(--color-grey);
     font-size: 13px;
     line-height: 15px;
   }
@@ -78,12 +53,12 @@
   &__footer-mobile {
     font-size: 13px;
     line-height: 15px;
-    color: #121212;
-    cursor: pointer;
+    color: var(--color-black);
+    cursor: url('./assets/cursor-pointer.svg'), pointer;
     text-decoration: none;
     &:hover,
     &:active {
-      color: #0ec261;
+      color: var(--color-green);
     }
   }
 
@@ -175,7 +150,7 @@
 
     &__footer-mobile {
       order: 1;
-      color: #0ec261;
+      color: var(--color-green);
       font-size: 13px;
       line-height: 15px;
       margin-bottom: 8px;

@@ -8,7 +8,7 @@
   }
 
   &__item {
-    background: url("../../../../../../assets/slide.jpg");
+    background: url('../../../../../../assets/slide.jpg');
     padding: 237px 96px;
     box-sizing: border-box;
     background-size: cover;
@@ -59,9 +59,9 @@
   }
 
   &_arrows div:hover:after {
-    background: #0ec261;
+    background: var(--color-green);
     opacity: 0.2;
-    cursor: pointer;
+    cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
   }
 
   &__dots {
@@ -81,7 +81,7 @@
   }
 
   &__dot.active {
-    color: #0ec261;
+    color: var(--color-green);
   }
 
   & {
@@ -92,7 +92,7 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    color: #ffffff;
+    color: var(--color-white);
     margin-bottom: 8px;
     position: relative;
     font-family: "Roboto-medium";
@@ -102,34 +102,9 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 22px;
-    color: #eeeeee;
+    color: var(--color-light-grey);
     margin-bottom: 32px;
     position: relative;
-  }
-
-  &__button {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 164px;
-    height: 48px;
-    background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
-    border-radius: 4px;
-    color: #eeeeee;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-
-    &:hover, &:active {
-      background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
-    }
-
-    &:focus {
-      background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
-    }
   }
 
   @media (min-width: 1024px) and (max-width: 1439px) {
