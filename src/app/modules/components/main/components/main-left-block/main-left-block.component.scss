@@ -2,14 +2,14 @@
   &__header-text {
     font-size: 30px;
     line-height: 35px;
-    color: #0ec261;
+    color: var(--color-green);
     font-family: "Roboto-medium";
   }
 
   &__black-title {
     font-size: 70px;
     line-height: 66px;
-    color: #121212;
+    color: var(--color-black);
     margin-bottom: 4px;
     font-family: "Roboto-medium";
   }
@@ -18,7 +18,7 @@
     font-size: 70px;
     line-height: 66px;
     margin-bottom: 34px;
-    color: #0ec261;
+    color: var(--color-green);
     font-family: "Roboto-medium";
   }
 
@@ -27,11 +27,11 @@
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 60px;
-    color: #999999;
+    color: var(--color-grey);
   }
 
   &__footer-coopirate {
-    color: #999999;
+    color: var(--color-grey);
     font-size: 13px;
     line-height: 15px;
   }
@@ -39,12 +39,12 @@
   &__footer-mobile {
     font-size: 13px;
     line-height: 15px;
-    color: #121212;
-    cursor: pointer;
+    color: var(--color-black);
+    cursor: url('./assets/cursor-pointer.svg'), pointer;
     text-decoration: none;
     &:hover,
     &:active {
-      color: #0ec261;
+      color: var(--color-green);
     }
   }
 
@@ -122,7 +122,7 @@
 
     &__footer-mobile {
       order: 1;
-      color: #0ec261;
+      color: var(--color-green);
       font-size: 13px;
       line-height: 15px;
       margin-bottom: 8px;

@@ -9,9 +9,9 @@
   align-items: center;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff;
+  color: var(--color-white);
   border: none;
-  cursor: pointer;
+  cursor: url('./assets/cursor-pointer.svg'), pointer;
 
   &--primary {
     background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
@@ -22,7 +22,7 @@
   }
 
   &--disable {
-    background: #EEEEEE;
+    background: var(--color-light-grey);
     pointer-events: none;
   }
 

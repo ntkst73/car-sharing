@@ -2,12 +2,12 @@
   &__text {
     font-size: 30px;
     line-height: 35px;
-    color: #0ec261;
+    color: var(--color-green);
     font-family: "Roboto-medium";
   }
 
   &__city {
-    color: #999999;
+    color: var(--color-grey);
     font-size: 14px;
     line-height: 16px;
     display: flex;

@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./order-confirmation.component.scss']
 })
 export class OrderConfirmationComponent {
-  text: string = 'Выбрать модель';
   mod: string = 'disable'
 }
