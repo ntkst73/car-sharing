@@ -1,0 +1,9 @@
+<ul class="order-cards-car">
+  <li class="order-card" *ngFor="let card of cards">
+    <div class="order-card__wrapper">
+      <div class="order-card__title">{{card.title}}</div>
+      <div class="order-card__price">{{card.price}}</div>
+    </div>
+    <div class="order-card__wrapper-image"><img class="order-card__image" [src]="card.image" alt=""></div>
+  </li>
+</ul>

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabs',
@@ -8,4 +9,10 @@ import { Component, Input } from '@angular/core';
 export class TabsComponent {
   @Input() text: string = '';
   @Input() btnMod: string = '';
+
+  constructor(private router: Router) {}
+
+  routeIsActive(routePath: string) {
+    return this.router.url == routePath;
+  }
 }
