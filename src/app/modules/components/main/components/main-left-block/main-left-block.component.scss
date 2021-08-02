@@ -3,21 +3,7 @@
     font-size: 30px;
     line-height: 35px;
     color: var(--color-green);
-    font-family: "Roboto-medium";
-  }
-
-  &__header-city {
-    color: var(--light-grey);
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-  }
-
-  &__header-text-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-weight: bold;
   }
 
   &__black-title {
@@ -25,7 +11,7 @@
     line-height: 66px;
     color: var(--color-black);
     margin-bottom: 4px;
-    font-family: "Roboto-medium";
+    font-weight: bold;
   }
 
   &__green-title {
@@ -33,7 +19,7 @@
     line-height: 66px;
     margin-bottom: 34px;
     color: var(--color-green);
-    font-family: "Roboto-medium";
+    font-weight: bold;
   }
 
   &__grey-title {
@@ -54,7 +40,7 @@
     font-size: 13px;
     line-height: 15px;
     color: var(--color-black);
-    cursor: url('./assets/cursor-pointer.svg'), pointer;
+    cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
     text-decoration: none;
     &:hover,
     &:active {
@@ -116,13 +102,6 @@
       padding: 0 16px;
     }
 
-    &_button {
-      font-size: 18px;
-      line-height: 21px;
-      width: 100%;
-      border-radius: 0;
-    }
-
     &__wrapper {
       padding: 0;
     }
@@ -132,13 +111,6 @@
       flex-direction: column;
       align-items: flex-end;
       background: #151b1f;
-      padding: 16px;
-    }
-
-    &__header-text-block {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       padding: 16px;
     }
 
@@ -154,26 +126,6 @@
       font-size: 13px;
       line-height: 15px;
       margin-bottom: 8px;
-    }
-
-    &__header-text {
-      margin-bottom: 8px;
-    }
-
-    &__header {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-    }
-
-    &__burger {
-      padding-left: 20px;
-      display: block;
-    }
-
-    &__burger {
-      padding: 16px;
-      cursor: pointer;
     }
   }
 }

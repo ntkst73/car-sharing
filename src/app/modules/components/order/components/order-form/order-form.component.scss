@@ -4,12 +4,13 @@
     margin-bottom: 12px;
     width: 38%;
     position: relative;
+    width: 280px;
 
     svg {
       position: absolute;
-      right: 8px;
-      bottom: 8px;
-      cursor: url('./assets/cursor-pointer.svg'), pointer;
+      right: 4px;
+      bottom: 4px;
+      cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
     }
   }
 
@@ -80,7 +81,7 @@
 
   @media (max-width: 1280px) {
     &__group {
-      width: 276px;
+      width: 280px;
     }
   }
 

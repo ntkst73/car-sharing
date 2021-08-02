@@ -1,17 +1,22 @@
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
-// import { MainComponent } from './modules/components/main/containers/main-container.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { MainPageComponent } from './modules/pages/main/main.component';
+import { OrderlocationComponent } from './modules/pages/order/components/order-location/order-location.component';
 
-// const routes: Routes = [
-//     {
-//         path: 'main',
-//         component: MainComponent
-//     }
-// ];
+const routes: Routes = [
+    {
+        path: '',
+        component: MainPageComponent
+    },
+    {
+      path: 'order-location',
+      component:  OrderlocationComponent
+    }
+];
 
 
-// @NgModule({
-//     imports: [RouterModule.forRoot(routes)],
-//     exports: [RouterModule]
-// })
-// export class AppRoutingModule {}
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
+export class AppRoutingModule {}

@@ -5,12 +5,12 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Roboto-light";
+  font-family: "Roboto";
   cursor: url('./assets/cursor.svg'), default;
 }
 
 @font-face {
-  font-family: "Roboto-light";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/Roboto-Light.eot");
   src: url("./assets/fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/roboto/Roboto-Light.woff") format("woff"), url("./assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-style: normal;
@@ -18,11 +18,11 @@ html, body {
 }
 
 @font-face {
-  font-family: "Roboto-medium";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/Roboto-Medium.eot");
   src: url("./assets/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/roboto/Roboto-Medium.woff") format("woff"), url("./assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 
