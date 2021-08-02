@@ -4,7 +4,7 @@
     font-size: 18px;
     line-height: 21px;
     color: var(--color-black);
-    font-family: "Roboto-medium";
+    font-weight: bold;
     text-align: right;
     margin-bottom: 24px;
   }
@@ -14,12 +14,10 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-black);
-    font-family: "Roboto-light";
     margin-right: 12px;
 
     span {
       color: var(--color-grey);
-      font-family: "Roboto-light";
       margin-left: 12px;
     }
   }
@@ -29,7 +27,6 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-grey);
-    font-family: "Roboto-light";
   }
 
   &__inner-wrapper {
@@ -47,7 +44,7 @@
     font-size: 16px;
     line-height: 16px;
     color: var(--color-black);
-    font-family: "Roboto-medium";
+    font-weight: bold;
     margin-bottom: 32px;
   }
 

@@ -3,7 +3,7 @@
     font-size: 30px;
     line-height: 35px;
     color: var(--color-green);
-    font-family: "Roboto-medium";
+    font-weight: bold;
   }
 
   &__black-title {
@@ -11,7 +11,7 @@
     line-height: 66px;
     color: var(--color-black);
     margin-bottom: 4px;
-    font-family: "Roboto-medium";
+    font-weight: bold;
   }
 
   &__green-title {
@@ -19,7 +19,7 @@
     line-height: 66px;
     margin-bottom: 34px;
     color: var(--color-green);
-    font-family: "Roboto-medium";
+    font-weight: bold;
   }
 
   &__grey-title {
