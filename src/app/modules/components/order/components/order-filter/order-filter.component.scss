@@ -15,7 +15,7 @@
   &__label {
     font-size: 14px;
     line-height: 16px;
-    color: #999999;
+    color: var(--color-grey);
     margin-left: 8px;
 
     &::before {
@@ -25,12 +25,12 @@
       height: 1em;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 1px solid #adb5bd;
+      border: 1px solid var(----color-grey-old-type);
       border-radius: 50%;
       margin-right: 0.5em;
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 50% 50%;
+      background-size: 50% 65%;
     }
   }
 
@@ -44,91 +44,45 @@
     position: absolute;
     z-index: -1;
     opacity: 0;
-  }
 
-  &__custom-radio + label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
+    & + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
 
-  &__custom-radio + label::before {
-    content: "";
-    display: inline-block;
-    width: 0.7em;
-    height: 0.7em;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #adb5bd;
-    border-radius: 50%;
-    margin-right: 0.5em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
+    & + label::before {
+      content: "";
+      display: inline-block;
+      width: 0.7em;
+      height: 0.7em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid var(----color-grey-old-type);
+      border-radius: 50%;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 65%;
+    }
 
-  &__custom-radio:not(:disabled):active + label::before {
-    background-color: #b3d7ff;
-    border-color: #b3d7ff;
-  }
+    &:not(:disabled):active + label::before {
+      background-color: var(--color-grey-blue);
+      border-color: var(--color-grey-blue);
+    }
 
-  &__custom-radio:checked + label {
-    color: #121212;
-  }
+    &:checked + label {
+      color: var(--color-black);
+    }
 
-  &__custom-radio:checked + label::before {
-    border-color: #0ec261;
-    background-color: #0ec261;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
-  }
+    &:checked + label::before {
+      border-color: var(--color-green);
+      background-color: var(--color-green);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
+    }
 
-  &__custom-radio:disabled + label::before {
-    background-color: #e9ecef;
-  }
-
-  &__custom-radio {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-
-  &__custom-radio + label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
-
-  &__custom-radio + label::before {
-    content: "";
-    display: inline-block;
-    width: 0.7em;
-    height: 0.7em;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #adb5bd;
-    border-radius: 50%;
-    margin-right: 0.5em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
-
-  &__custom-radio:not(:disabled):active + label::before {
-    background-color: #b3d7ff;
-    border-color: #b3d7ff;
-  }
-
-  &__custom-radio:checked + label {
-    color: #121212;
-  }
-
-  &__custom-radio:checked + label::before {
-    border-color: #0ec261;
-    background-color: #0ec261;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
-  }
-
-  &__custom-radio:disabled + label::before {
-    background-color: #e9ecef;
+    &:disabled + label::before {
+      background-color: var(--color-rey-white);
+    }
   }
 }

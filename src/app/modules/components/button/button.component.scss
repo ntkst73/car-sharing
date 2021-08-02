@@ -1,5 +1,5 @@
 .button {
-  background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
+  background: linear-gradient(90deg, var(--color-green) 2.61%, #039f67 112.6%);
   background-blend-mode: darken;
   border-radius: 8px;
   width: 250px;

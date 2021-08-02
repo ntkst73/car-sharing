@@ -68,8 +68,7 @@
     z-index: 22;
     position: absolute;
     display: block;
-    background: #111518;
-    /* background: rgba(21, 27, 31, 0.81); */
+    background: var(--color-black-old-type);
     top: 0;
 
     &:before {
@@ -217,7 +216,7 @@
       z-index: 22;
       position: absolute;
       display: block;
-      background: #111518;
+      background: var(--color-black-star);
       /* background: rgba(21, 27, 31, 0.81); */
       top: 0;
 
