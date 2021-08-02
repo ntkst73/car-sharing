@@ -90,7 +90,7 @@
     color: var(--color-white);
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Roboto-medium";
+    font-weight: bold;
 
     &:hover, &:active {
       color: var(--color-green);
@@ -233,7 +233,7 @@
       color: var(--color-white);
       text-decoration: none;
       text-transform: uppercase;
-      font-family: "Roboto-medium";
+      font-weight: bold;
 
       &:hover,
       &:active {
