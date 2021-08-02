@@ -13,6 +13,7 @@ import { MenuModule } from './modules/components/menu/menu.module';
 import { OrderModule } from './modules/components/order/order.module';
 
 import { MainPageComponent } from './modules/pages/main/main.component';
+import { OrderAdditionallyComponent } from './modules/pages/order/components/order-additionally/order-additionally.component';
 import { OrderlocationComponent } from './modules/pages/order/components/order-location/order-location.component';
 import { OrderModelComponent } from './modules/pages/order/components/order-model/order-model.component';
 
@@ -23,7 +24,8 @@ import { OrderModelComponent } from './modules/pages/order/components/order-mode
     AppComponent,
     MainPageComponent,
     OrderlocationComponent,
-    OrderModelComponent
+    OrderModelComponent,
+    OrderAdditionallyComponent
   ],
   imports: [
     BrowserModule,

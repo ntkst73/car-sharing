@@ -11,6 +11,9 @@
       <app-order-filter></app-order-filter>
       <app-order-cards-car></app-order-cards-car>
     </div>
+    <div *ngIf="routeIsActive('/order-additionally')">
+      <app-order-form></app-order-form>
+    </div>
   </div>
   <div class="order-right-block">
     <app-order-confirmation></app-order-confirmation>

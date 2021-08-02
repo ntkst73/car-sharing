@@ -1,4 +1,4 @@
-<div class="order-form">
+<div class="order-form" *ngIf="routeIsActive('/order-location')">
   <div class="order-form__group">
     <label class="order-form__label" for="">Город</label>
     <app-input typeInput="text" id="city" value="Ульяновск"></app-input>
@@ -6,14 +6,14 @@
   <div class="order-form__group">
     <label class="order-form__label" for="">Пункт выдач</label>
     <app-input placeholder="Начните вводить пункт" typeInput="text" id="pick-up-point"></app-input>
-    <div class="order-form__wrapper-icon">
+    <!-- <div class="order-form__wrapper-icon">
       <svg (click)="deleteValue($event)" *ngIf="icon === true" width="8" height="8" viewBox="0 0 8 8" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
         fill="#121212" />
     </svg>
-    </div>
+    </div> -->
   </div>
   <div>
     <div class="order-form__text">Выбрать на карте:</div>
@@ -33,4 +33,21 @@
       </svg>
     </div>
   </div>
+</div>
+
+<div class="order-form" *ngIf="routeIsActive('/order-additionally')">
+  <app-order-filter></app-order-filter>
+  <div>Дата аренды</div>
+  <div class="order-form__group">
+    <label class="order-form__label" for="">C</label>
+    <app-input typeInput="text" id="city" value="12.06.2019 12:00"></app-input>
+  </div>
+  <div class="order-form__group">
+    <label class="order-form__label" for="">По</label>
+    <app-input placeholder="Введите дату и время" typeInput="text" id="city"></app-input>
+  </div>
+  <div>Тариф</div>
+  <!-- <app-order-filter></app-order-filter> -->
+  <div>Доп услуги</div>
+  <!-- <app-order-filter></app-order-filter> -->
 </div>

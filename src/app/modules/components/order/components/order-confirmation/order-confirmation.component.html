@@ -13,8 +13,33 @@
       <div class="order-confirmation__input-text">Hyndai, i30 N</div>
     </div>
   </div>
+  <div class="order-confirmation__inner-wrapper" *ngIf="routeIsActive('/order-additionally')">
+    <div class="order-confirmation__label">Цвет <span>............................................</span></div>
+    <div class="order-confirmation__input-group">
+      <div class="order-confirmation__input-text">Голубой</div>
+    </div>
+  </div>
+  <div class="order-confirmation__inner-wrapper" *ngIf="routeIsActive('/order-additionally')">
+    <div class="order-confirmation__label">Длительность аренды <span>............................................</span></div>
+    <div class="order-confirmation__input-group">
+      <div class="order-confirmation__input-text">1д 2ч</div>
+    </div>
+  </div>
+  <div class="order-confirmation__inner-wrapper" *ngIf="routeIsActive('/order-additionally')">
+    <div class="order-confirmation__label">Тариф <span>............................................</span></div>
+    <div class="order-confirmation__input-group">
+      <div class="order-confirmation__input-text">На сутки</div>
+    </div>
+  </div>
+  <div class="order-confirmation__inner-wrapper" *ngIf="routeIsActive('/order-additionally')">
+    <div class="order-confirmation__label">Полный бак <span>............................................</span></div>
+    <div class="order-confirmation__input-group">
+      <div class="order-confirmation__input-text">Да</div>
+    </div>
+  </div>
   <div>
-    <div class="order-confirmation__price">Цена: <span>от 8 000 до 12 000 ₽</span></div>
+    <div class="order-confirmation__price" *ngIf="!routeIsActive('/order-additionally')">Цена: <span>от 8 000 до 12 000 ₽</span></div>
+    <div class="order-confirmation__price" *ngIf="routeIsActive('/order-additionally')">Цена: <span>16 000 ₽</span></div>
   </div>
   <div class="order-confirmation__button">
     <app-button *ngIf="routeIsActive('/order-location')" cssBtn [btnMod]="mod">Выбрать модель</app-button>
