@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { InputComponent } from './input.component';
 
-
 @NgModule({
   exports: [InputComponent],
   declarations: [
@@ -15,5 +14,5 @@ import { InputComponent } from './input.component';
   providers: [],
 })
 export class InputModule {
- 
+
 }

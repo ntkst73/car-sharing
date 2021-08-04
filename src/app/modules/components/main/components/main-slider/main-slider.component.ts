@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './main-slider.component.html',
   styleUrls: ['./main-slider.component.scss']
 })
+
 export class MainSliderComponent {
   mod: string = 'primary';
 }
