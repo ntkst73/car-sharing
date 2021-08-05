@@ -1,12 +1,6 @@
 <ul class="order-filter">
-  <li class="order-filter__item">
-    <input checked name="contact" id="models" class="order-filter__custom-radio" type="radio">
-    <label class="order-filter__label" for="models">Все модели</label>
+  <li class="order-filter__item" *ngFor="let item of items">
+    <input [name]="item.name" checked="true" [id]="item.id" class="order-filter__custom-radio" type="radio">
+    <label class="order-filter__label" [for]="item.id">{{item.label}}</label>
   </li>
-  <li class="order-filter__item">
-    <input name="contact" id="economy" class="order-filter__custom-radio" type="radio">
-    <label class="order-filter__label" for="economy">Эконом</label></li>
-  <li class="order-filter__item">
-    <input name="contact" id="premium" class="order-filter__custom-radio" type="radio">
-    <label class="order-filter__label" for="premium">Премиум</label></li>
 </ul>

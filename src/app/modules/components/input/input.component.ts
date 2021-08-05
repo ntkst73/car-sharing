@@ -10,6 +10,7 @@ export class InputComponent {
   @Input() typeInput: string = '';
   @Input() value: string = '';
   @Input() id: string = '';
+  @Input() class: string = '';
 
   getValue(event) {
     console.log(event);

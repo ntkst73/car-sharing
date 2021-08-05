@@ -6,11 +6,23 @@
     position: relative;
     width: 280px;
 
+    &--text-right {
+      text-align: left;
+    }
+
     svg {
       position: absolute;
       right: 4px;
       bottom: 4px;
       cursor: url('../../../../../../assets/cursor-pointer.svg'), pointer;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 18px;
+
+    &:not(:first-child) {
+      margin-top: 32px;
     }
   }
 

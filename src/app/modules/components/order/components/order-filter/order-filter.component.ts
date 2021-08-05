@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+interface orderFilter {
+  label: string;
+  id: number | string;
+  name: string;
+  checked?: boolean;
+}
 
 @Component({
   selector: 'app-order-filter',
@@ -6,5 +13,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./order-filter.component.scss']
 })
 export class OrderFilterComponent {
-  
+  item: orderFilter
+
+  @Input() items: [];
+
 }

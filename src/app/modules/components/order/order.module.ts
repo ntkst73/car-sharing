@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ButtonModule } from '../button/button.module';
+import { CheckBoxModule } from '../checkbox/checkbox.module';
 import { HeaderModule } from '../header/header.module';
 import { InputModule } from '../input/input.module';
 import { TabsComponent } from '../tabs/tabs.component';
@@ -24,7 +25,8 @@ import { OrderContainersComponent } from './containers/order-containers.componen
     ButtonModule,
     HeaderModule,
     InputModule,
-    OrderCardModule
+    OrderCardModule,
+    CheckBoxModule
   ],
   providers: [],
 })
