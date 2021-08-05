@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RadioComponent } from './radio.component';
-
+import { CheckBOxComponent } from './checkbox.component';
 
 @NgModule({
-  exports: [RadioComponent],
+  exports: [CheckBOxComponent],
   declarations: [
-    RadioComponent
+    CheckBOxComponent
   ],
   imports: [
     BrowserModule,
@@ -14,6 +13,4 @@ import { RadioComponent } from './radio.component';
   ],
   providers: [],
 })
-export class RadioModule {
-
-}
+export class CheckBoxModule { }

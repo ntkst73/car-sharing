@@ -1,4 +1,16 @@
 .header {
+  &--order {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 64px;
+  }
+
+  .typeOrder & {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 64px;
+  }
+
   &__text {
     font-size: 30px;
     line-height: 35px;
@@ -20,11 +32,20 @@
     align-items: center;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
+    &--order {
+      padding: 0 24px;
+    }
+  }
 
+  @media (max-width: 767px) {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+
+    &--order {
+      padding: 0;
+    }
 
     &__text-block {
       display: flex;

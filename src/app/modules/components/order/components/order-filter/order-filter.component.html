@@ -1,11 +1,6 @@
-<!-- <ul class="order-filter">
-  <li class="order-filter__item"><input checked name="contact" id="color-green1" class="order-filter__custom-radio" type="radio"><label class="order-filter__label" for="color-green1">Все модели</label></li>
-  <li class="order-filter__item"><input name="contact" id="color-green2" class="order-filter__custom-radio" type="radio"><label class="order-filter__label" for="color-green2">Эконом</label></li>
-  <li class="order-filter__item"><input name="contact" id="color-green3" class="order-filter__custom-radio" type="radio"><label class="order-filter__label" for="color-green3">Премиум</label></li>
-</ul> -->
-
 <ul class="order-filter">
-  <li class="order-filter__item"><app-radio  name="ww" id="color-green6" label="Все модели"></app-radio></li>
-  <li class="order-filter__item"><app-radio  name="ww" id="color-green4" label="Эконом"></app-radio></li>
-  <li class="order-filter__item"><app-radio  name="ww" id="color-green5" label="Премиум"></app-radio></li>
+  <li class="order-filter__item" *ngFor="let item of items">
+    <input [name]="item.name" checked="true" [id]="item.id" class="order-filter__custom-radio" type="radio">
+    <label class="order-filter__label" [for]="item.id">{{item.label}}</label>
+  </li>
 </ul>

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ButtonModule } from '../button/button.module';
+import { CheckBoxModule } from '../checkbox/checkbox.module';
 import { HeaderModule } from '../header/header.module';
 import { InputModule } from '../input/input.module';
-import { RadioModule } from '../radio/radio.module';
 import { TabsComponent } from '../tabs/tabs.component';
 import { OrderCardModule } from './components/order-cards-car/order-card.module';
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
@@ -26,7 +26,7 @@ import { OrderContainersComponent } from './containers/order-containers.componen
     HeaderModule,
     InputModule,
     OrderCardModule,
-    RadioModule
+    CheckBoxModule
   ],
   providers: [],
 })

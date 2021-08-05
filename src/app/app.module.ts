@@ -5,19 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ButtonModule } from './modules/components/button/button.module';
+import { CheckBoxModule } from './modules/components/checkbox/checkbox.module';
 import { HeaderModule } from './modules/components/header/header.module';
 import { InputModule } from './modules/components/input/input.module';
-
 import { MainModule } from './modules/components/main/main.module';
 import { MenuModule } from './modules/components/menu/menu.module';
 import { OrderModule } from './modules/components/order/order.module';
-
 import { MainPageComponent } from './modules/pages/main/main.component';
 import { OrderAdditionallyComponent } from './modules/pages/order/components/order-additionally/order-additionally.component';
 import { OrderlocationComponent } from './modules/pages/order/components/order-location/order-location.component';
 import { OrderModelComponent } from './modules/pages/order/components/order-model/order-model.component';
-
-
 
 @NgModule({
   declarations: [
@@ -36,7 +33,8 @@ import { OrderModelComponent } from './modules/pages/order/components/order-mode
     CommonModule,
     ButtonModule,
     HeaderModule,
-    InputModule
+    InputModule,
+    CheckBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,30 +15,9 @@
   padding-top: 48px;
 }
 
-:host::ng-deep {
-  .header {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 64px;
-  }
-}
-
-@media (max-width: 1023px) {
-  :host::ng-deep {
-    .header {
-      padding: 0 24px;
-    }
-  }
-}
-
 @media (max-width: 767px) {
+
   .app-wrapper {
     padding-top: 0;
-  }
-
-  :host::ng-deep {
-    .header {
-      padding: 0;
-    }
   }
 }
