@@ -7,10 +7,17 @@
       <div class="order-confirmation__input-text">Нариманова 42</div>
     </div>
   </div>
+  <div class="order-confirmation__inner-wrapper" *ngIf="routeIsActive('/order-model')">
+    <div class="order-confirmation__label">Модель <span>............................................</span></div>
+    <div class="order-confirmation__input-group">
+      <div class="order-confirmation__input-text">Hyndai, i30 N</div>
+    </div>
+  </div>
   <div>
     <div class="order-confirmation__price">Цена: <span>от 8 000 до 12 000 ₽</span></div>
   </div>
   <div class="order-confirmation__button">
-    <app-button cssBtn [btnMod]="mod">Выбрать модель</app-button>
+    <app-button *ngIf="routeIsActive('/order-location')" cssBtn [btnMod]="mod">Выбрать модель</app-button>
+    <app-button *ngIf="routeIsActive('/order-model')" cssBtn>Дополнительно</app-button>
   </div>
 </div>

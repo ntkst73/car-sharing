@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './modules/pages/main/main.component';
 import { OrderlocationComponent } from './modules/pages/order/components/order-location/order-location.component';
+import { OrderModelComponent } from './modules/pages/order/components/order-model/order-model.component';
 
 const routes: Routes = [
     {
@@ -11,7 +12,11 @@ const routes: Routes = [
     {
       path: 'order-location',
       component:  OrderlocationComponent
-    }
+    },
+    {
+      path: 'order-model',
+      component:  OrderModelComponent
+    },
 ];
 
 

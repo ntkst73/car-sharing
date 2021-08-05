@@ -48,6 +48,16 @@
     margin-bottom: 32px;
   }
 
+  @media (max-width: 1280px) {
+    &__label span {
+      display: none;
+    }
+
+    &__inner-wrapper {
+      align-items: baseline;
+    }
+  }
+
   @media (max-width: 1023px) {
     &__price {
       font-size: 12px;
@@ -78,8 +88,7 @@
     }
   }
 
-  @media (max-width: 768px) {
-
+  @media (max-width: 767px) {
     &__label {
       text-align: left;
     }

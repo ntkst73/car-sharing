@@ -7,19 +7,19 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from './modules/components/button/button.module';
 import { HeaderModule } from './modules/components/header/header.module';
 import { InputModule } from './modules/components/input/input.module';
-
 import { MainModule } from './modules/components/main/main.module';
 import { MenuModule } from './modules/components/menu/menu.module';
 import { OrderModule } from './modules/components/order/order.module';
 import { MainPageComponent } from './modules/pages/main/main.component';
 import { OrderlocationComponent } from './modules/pages/order/components/order-location/order-location.component';
-
+import { OrderModelComponent } from './modules/pages/order/components/order-model/order-model.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     OrderlocationComponent,
+    OrderModelComponent
   ],
   imports: [
     BrowserModule,
